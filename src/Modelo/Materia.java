@@ -30,8 +30,37 @@ public class Materia {
         this.Anio = Anio;
         this.Estado = Estado;
     }
-    
-    
-    
-    
+
+    public int getIdMateria() {
+        return IdMateria;
+    }
+
+    public void setIdMateria(int IdMateria) {
+        this.IdMateria = IdMateria;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+
+    public int getAnio() {
+        return Anio;
+    }
+
+    public void setAnio(int Anio) {
+        this.Anio = Anio;
+    }
+
+    public boolean isEstado() {
+        return Estado;
+    }
+
+    public void setEstado(boolean Estado) {
+        this.Estado = Estado;
+    }  
+   
 }

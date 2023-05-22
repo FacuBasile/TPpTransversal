@@ -34,8 +34,9 @@ public class AlumnoData {
             if (rs.next()){
                 alumno.setIdAlumno(rs.getInt(1));
             } else{
-                System.out.println("El alumno no pudo guardar");
+                System.out.println("El alumno no se pudo guardar");
             }             
+            p.close();
         } catch (SQLException ex) {
             Logger.getLogger(AlumnoData.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -77,6 +78,7 @@ public class AlumnoData {
             } else {
                 System.out.println("Alumno inexistente");
             }
+            ps.close();
         }catch(SQLException ex){
             Logger.getLogger(AlumnoData.class.getName()).log(Level.SEVERE, null, ex);
         }     
